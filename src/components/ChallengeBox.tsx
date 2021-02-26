@@ -22,10 +22,10 @@ export function ChallengeBox() {
     <div className={styles.challengeBoxContainer}>
       { activeChallenge ? (
         <div className={styles.challengeActive}>
-          <header>Ganhe {activeChallenge.amount} xp</header>
+          <header>Get {activeChallenge.amount} xp</header>
           <main>
             <img src={`icons/${activeChallenge.type}.svg`} />
-            <strong>Novo desafio</strong>
+            <strong>New Challenge</strong>
             <p>{activeChallenge.description}</p>
           </main>
           <footer>
@@ -34,23 +34,23 @@ export function ChallengeBox() {
               className={styles.challengeFailedButton}
               onClick={handleChallengeFailed}
             >
-              Falhei
+              Failed
             </button>
             <button
               type="button"
               className={styles.challengeCompletedButton}
               onClick={handleChallengeCompleted}
             >
-              Completei
+              Succeeded
             </button>
           </footer>
         </div>
       ) : (
         <div className={styles.challengeNotActive}>
-          <strong>Finalize um ciclo para receber um desafio</strong>
+          <strong>Complete a cycle to recieve a new challenge</strong>
           <p>
             <img src="icons/level-up.svg" alt="Level Up" />
-            Avançe de level completando desafios.
+            Level Up by completing challenges.
           </p>
       </div>
       ) }
