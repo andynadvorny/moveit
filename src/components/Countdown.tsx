@@ -34,7 +34,7 @@ export function Countdown() {
           disabled
           className={styles.countdownButton}
          >
-          Ciclo encerrado <i class="fas fa-check-square"></i>
+          Ciclo encerrado <i className="fas fa-check-square"></i>
         </button>
       ) : (
         <>
@@ -44,7 +44,7 @@ export function Countdown() {
                 className={`${styles.countdownButton} ${styles.countdownButtonActive}`}
                 onClick={resetCountdown}
               >
-                Abandonar ciclo <i class="fas fa-times"></i>
+                Abandonar ciclo <i className="fas fa-times"></i>
               </button>
             ) : (
               <button 
