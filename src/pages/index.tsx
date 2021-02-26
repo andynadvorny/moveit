@@ -27,6 +27,12 @@ export default function Home(props: HomeProps) {
       <div className={styles.container}>
         <Head>
           <title>Home | move.it</title>
+          <meta name="description" content="complete work cycles and level up!" />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Home | move.it" />
+          <meta property="og:description" content="complete work cycles and level up!" />
+          <meta property="og:image" content=""></meta>
         </Head>
 
         <ExperienceBar />
